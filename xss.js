@@ -103,17 +103,16 @@ function replace() {
 
     var message = document.createElement('div');
     message.className = 'message';
-    message.textContent = "Do you leave your doors open at home?";
+    message.textContent = "Do you like when people mess with your stuff?";
     card.appendChild(message);
 
     var p = document.createElement('p');
     p.innerHTML = `You might wonder why this message is here. 
-    It's because you left your ports open to the public. 
-    Just as you wouldn't welcome strangers into your home, 
-    don't invite them into your server either. 
+    It's because your website is vulnerable to XSS. 
+    Just as you wouldn't like someone mess with your belongings, 
+    don't let them mess with your website either. 
     Please avoid repeating this mistake. 
-    Now, brew yourself some coffee and secure those silly ports! 
-    (hint: that coffee should be done expressly) <br><br>
+    Now, brew yourself some coffee and fix this silly XSS! <br><br>
     ps. take this as friendly advice`;
     card.appendChild(p);
 
